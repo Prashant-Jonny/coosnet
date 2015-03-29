@@ -1,0 +1,5 @@
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\COOS Messaging\bin\Release\COOS Messaging.dll
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\COOS Messaging\bin\Release\COOS Messaging.pdb
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\COOS Messaging\obj\Release\ResolveAssemblyReference.cache
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\COOS Messaging\obj\Release\COOS Messaging.dll
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\COOS Messaging\obj\Release\COOS Messaging.pdb

@@ -1,0 +1,7 @@
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\Pong Endpoint\bin\Debug\Pong Endpoint.dll
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\Pong Endpoint\bin\Debug\Pong Endpoint.pdb
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\Pong Endpoint\bin\Debug\COOS Messaging.dll
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\Pong Endpoint\bin\Debug\COOS Messaging.pdb
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\Pong Endpoint\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\Pong Endpoint\obj\Debug\Pong Endpoint.dll
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\Pong Endpoint\obj\Debug\Pong Endpoint.pdb

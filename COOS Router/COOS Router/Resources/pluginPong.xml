@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugins xmlns="http://www.coos.org/PluginXMLSchema">
+  <plugin name="thePong" startLevel="10" class="Org.Coos.Messaging.Plugins.Pong.PongEndpoint" channel="ch1">
+    <property name="lcmRegEnabled" value="false" />
+    <property name="lcmRegRequired" value="false" />
+   <!-- <property name="spec" value="/ApplicationSpec.xml" /> -->
+    <!--<property name="defaultReceiverUri" value="coos://thePong/pongActor@Pong" />-->
+    <!--    <channel>chjms</channel>  -->
+    </plugin>
+
+  <channel name="ch1" protocol="coos"  class="Org.Coos.Messaging.Impl.PluginChannel" transport="JVM">
+    <inBound>
+    </inBound>
+    <outBound>
+    </outBound>
+  </channel>
+  
+  <!--To be uncommented in TOVAD setup  -->
+  <!--
+  <channel name="chjms" protocol="inboundjms" class="org.coos.messaging.plugin.PluginChannel" transport="JMS" segment=".">
+    <inBound>
+    </inBound>
+    <outBound>
+    </outBound>
+  </channel>
+  
+   <transport name="JMS" class="org.coos.jms.transport.JmsTransport">
+    <property name="consumerProviderUrl"  value="${consumerProviderUrl:-tcp://localhost:61616?wireFormat.maxInactivityDuration=0&amp;keepAlive=true}"/>
+    <property name="initialContextFactory" value="org.apache.activemq.jndi.ActiveMQInitialContextFactory"/>
+    <property name="consumerDest" value="${consumerDest:-dynamicTopics/device.in.>}"/>
+  </transport>
+  -->
+  <transport name="JVM" class="Org.Coos.Messaging.Transport.JvmTransport">
+    <property name="COOSInstanceName" value="coosNET" />
+    <property name="ChannelServerName" value="default" />
+  </transport>
+  
+ 
+
+</plugins>

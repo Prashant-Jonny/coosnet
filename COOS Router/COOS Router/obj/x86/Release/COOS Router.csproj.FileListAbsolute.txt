@@ -1,0 +1,10 @@
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\COOS Router\bin\Release\COOS Router.exe
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\COOS Router\bin\Release\COOS Router.pdb
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\COOS Router\bin\Release\COOS Messaging.dll
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\COOS Router\bin\Release\COOS Messaging.pdb
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\COOS Router\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\COOS Router\obj\x86\Release\COOS_Router.ResourceCOOS.resources
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\COOS Router\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\COOS Router\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\COOS Router\obj\x86\Release\COOS Router.exe
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOS Router\COOS Router\obj\x86\Release\COOS Router.pdb

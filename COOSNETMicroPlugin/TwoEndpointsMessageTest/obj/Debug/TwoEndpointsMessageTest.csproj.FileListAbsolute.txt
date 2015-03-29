@@ -1,0 +1,7 @@
+C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\TwoEndpointsMessageTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\TwoEndpointsMessageTest\obj\Debug\TinyCLR_DebugReferences.cache
+C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\TwoEndpointsMessageTest\obj\Debug\TwoEndpointsMessageTest.Resources.resources
+C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\TwoEndpointsMessageTest\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\TwoEndpointsMessageTest\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\TwoEndpointsMessageTest\obj\Debug\TwoEndpointsMessageTest.Resources.tinyresources
+C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\TwoEndpointsMessageTest\obj\Debug\TinyResGen.cache

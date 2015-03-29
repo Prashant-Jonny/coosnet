@@ -1,0 +1,4 @@
+C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\obj\Debug\TinyCLR_DebugReferences.cache
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\Java io library\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\Java io library\obj\Debug\TinyCLR_DebugReferences.cache

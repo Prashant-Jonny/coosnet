@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06D7B690-BC05-4859-A3AE-99AF566D1030}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Org.Coos.Messaging</RootNamespace>
+    <AssemblyName>COOS Messaging</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commonplatform\ICOContainer.cs" />
+    <Compile Include="Commonplatform\Exceptions\ConnectingException.cs" />
+    <Compile Include="Commonplatform\Exceptions\EndpointException.cs" />
+    <Compile Include="Commonplatform\Exceptions\ProcessorException.cs" />
+    <Compile Include="Commonplatform\Exceptions\ProcessorInterruptException.cs" />
+    <Compile Include="Commonplatform\ExchangePattern.cs" />
+    <Compile Include="Commonplatform\Impl\DefaultChannel.cs" />
+    <Compile Include="Commonplatform\Impl\DefaultConsumer.cs" />
+    <Compile Include="Commonplatform\Impl\DefaultEndpoint.cs" />
+    <Compile Include="Commonplatform\Impl\DefaultExchange.cs" />
+    <Compile Include="Commonplatform\Impl\DefaultMessage.cs" />
+    <Compile Include="Commonplatform\Impl\DefaultNotification.cs" />
+    <Compile Include="Commonplatform\Impl\DefaultProcessor.cs" />
+    <Compile Include="Commonplatform\Impl\DefaultProducer.cs" />
+    <Compile Include="Commonplatform\Impl\EndpointStateManager.cs" />
+    <Compile Include="Commonplatform\InteractionHelper.cs" />
+    <Compile Include="Commonplatform\Interfaces\IAsyncCallback.cs" />
+    <Compile Include="Commonplatform\Interfaces\IChannel.cs" />
+    <Compile Include="Commonplatform\Interfaces\IChannelProcessor.cs" />
+    <Compile Include="Commonplatform\Interfaces\IConfigurable.cs" />
+    <Compile Include="Commonplatform\Interfaces\IConnectable.cs" />
+    <Compile Include="Commonplatform\Interfaces\IConsumer.cs" />
+    <Compile Include="Commonplatform\Interfaces\IEndpoint.cs" />
+    <Compile Include="Commonplatform\Interfaces\IEndpointPrimitives.cs" />
+    <Compile Include="Commonplatform\Interfaces\IEndpointStateManager.cs" />
+    <Compile Include="Commonplatform\Interfaces\IExchange.cs" />
+    <Compile Include="Commonplatform\Interfaces\ILCMEndpoint.cs" />
+    <Compile Include="Commonplatform\Interfaces\IMessage.cs" />
+    <Compile Include="Commonplatform\Interfaces\IMessagePrimitives.cs" />
+    <Compile Include="Commonplatform\Interfaces\INotification.cs" />
+    <Compile Include="Commonplatform\Interfaces\IProcessor.cs" />
+    <Compile Include="Commonplatform\Interfaces\IProducer.cs" />
+    <Compile Include="Commonplatform\Interfaces\ISerializer.cs" />
+    <Compile Include="Commonplatform\Interfaces\IService.cs" />
+    <Compile Include="Commonplatform\Interfaces\ISubscriptionFilter.cs" />
+    <Compile Include="Commonplatform\Interfaces\ISubscriptionFilterPrimitives.cs" />
+    <Compile Include="Commonplatform\Interfaces\ITransport.cs" />
+    <Compile Include="Commonplatform\Interfaces\Java\IRunnable.cs" />
+    <Compile Include="Commonplatform\LCMEndpointReport.cs" />
+    <Compile Include="Commonplatform\Link.cs" />
+    <Compile Include="Commonplatform\Util\Logger\DefaultLogger.cs" />
+    <Compile Include="Commonplatform\Util\Logger\ILog.cs" />
+    <Compile Include="Commonplatform\Util\Logger\LogFactory.cs" />
+    <Compile Include="Commonplatform\MessageContext.cs" />
+    <Compile Include="Commonplatform\Module\CommonConstants.cs" />
+    <Compile Include="Commonplatform\Module\EdgeLCMMessageFactory.cs" />
+    <Compile Include="Commonplatform\Module\EdgeMessageProperties.cs" />
+    <Compile Include="Commonplatform\Module\LCMEdgeMessageFactory.cs" />
+    <Compile Include="Commonplatform\Module\LCMMessageProperties.cs" />
+    <Compile Include="Commonplatform\Plugin.cs" />
+    <Compile Include="Commonplatform\SerializerFactory.cs" />
+    <Compile Include="Commonplatform\Tasks\CallbackTask.cs" />
+    <Compile Include="Commonplatform\Tasks\ConsumerTask.cs" />
+    <Compile Include="Commonplatform\Tasks\LCMReportChildrenTask.cs" />
+    <Compile Include="Commonplatform\Tasks\LCMReportChildStateTask.cs" />
+    <Compile Include="Commonplatform\Tasks\LCMReportStateTask.cs" />
+    <Compile Include="Commonplatform\Tasks\TestTask.cs" />
+    <Compile Include="Commonplatform\Util\Java\DataInputStream.cs" />
+    <Compile Include="Commonplatform\Util\Java\DataOutputStream.cs" />
+    <Compile Include="Commonplatform\Util\Java\UTFDataFormatException.cs" />
+    <Compile Include="Commonplatform\Util\Java\Util.cs" />
+    <Compile Include="Commonplatform\Util\Threadpool\Executors.cs" />
+    <Compile Include="Commonplatform\Util\Threadpool\IExecutorService.cs" />
+    <Compile Include="Commonplatform\Util\Threadpool\Queue.cs" />
+    <Compile Include="Commonplatform\Util\Threadpool\ThreadPool.cs" />
+    <Compile Include="Commonplatform\Util\Threadpool\ThreadPoolThread.cs" />
+    <Compile Include="Plugin\PluginChannel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Commonplatform\Util\UriHelper.cs" />
+    <Compile Include="Commonplatform\Util\UriProtocolHelper.cs" />
+    <Compile Include="Commonplatform\Util\UuidGenerator.cs" />
+    <Compile Include="Commonplatform\Util\UuidHelper.cs" />
+    <Compile Include="Serializer\ObjectSerializer.cs" />
+    <Compile Include="Util\Commonplatform\Serialize\AFClassLoader.cs" />
+    <Compile Include="Util\Commonplatform\Serialize\AFSerializer.cs" />
+    <Compile Include="Util\Commonplatform\Serialize\ArrayHelper.cs" />
+    <Compile Include="Util\Commonplatform\Serialize\Hashtable.cs" />
+    <Compile Include="Util\Commonplatform\Serialize\IntegerHelper.cs" />
+    <Compile Include="Util\Commonplatform\Serialize\ObjectHelper.cs" />
+    <Compile Include="Util\Commonplatform\Serialize\StringHelper.cs" />
+    <Compile Include="Util\Commonplatform\Serialize\VectorHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Commonplatform\Exceptions\Java\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

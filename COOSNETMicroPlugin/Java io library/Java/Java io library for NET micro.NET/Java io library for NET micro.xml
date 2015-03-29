@@ -1,0 +1,500 @@
+﻿<ConversionLog>
+    <Settings>
+        <Setting
+            Name = "LogFile"
+            Value = "Java io library for NET micro.xml"
+        />
+        <Setting
+            Name = "ProjectName"
+            Value = "Java_io_library_for_NET_micro"
+        />
+        <Setting
+            Name = "StartTime"
+            Value = "Tuesday, October 26, 2010 16:47:00"
+        />
+        <Setting
+            Name = "OutputDir"
+            Value = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Java io library for NET micro.NET"
+        />
+        <Setting
+            Name = "ProjectPath"
+            Value = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java"
+        />
+    </Settings>
+    <Root>
+        <File
+            OldPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Closable.java"
+            NewPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Java io library for NET micro.NET\Closable.cs"
+        />
+        <File
+            OldPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Datainput.java"
+            NewPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Java io library for NET micro.NET\Datainput.cs"
+        >
+            <Class Name = "java.io.DataInput" >
+                <Section Name = "Declarations" >
+                    <Issue
+                        Type = "Compile"
+                        Number = "1224"
+                        Severity = "2"
+                    >The equivalent in .NET for method 'java.io.DataInput.readByte' returns a different type.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1224"
+                        Severity = "2"
+                    >The equivalent in .NET for method 'java.io.DataInput.readUnsignedByte' returns a different type.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1224"
+                        Severity = "2"
+                    >The equivalent in .NET for method 'java.io.DataInput.readUnsignedShort' returns a different type.</Issue>
+                </Section>
+            </Class>
+        </File>
+        <File
+            OldPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Datainputstream.java"
+            NewPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Java io library for NET micro.NET\Datainputstream.cs"
+        >
+            <Class Name = "java.io.DataInputStream" >
+                <Section Name = "readDouble()" >
+                    <Issue
+                        Type = "Compile"
+                        Number = "1000"
+                        LinkKeywordParam = "_javalangDoublelongBitsToDouble_long"
+                        Severity = "1"
+                    >Method 'java.lang.Double.longBitsToDouble' was not converted.</Issue>
+                </Section>
+                <Section Name = "readFloat()" >
+                    <Issue
+                        Type = "Compile"
+                        Number = "1000"
+                        LinkKeywordParam = "_javalangFloatintBitsToFloat_int"
+                        Severity = "1"
+                    >Method 'java.lang.Float.intBitsToFloat' was not converted.</Issue>
+                </Section>
+                <Section Name = "Declarations" >
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1224"
+                        Severity = "2"
+                    >The equivalent in .NET for method 'java.io.DataInputStream.readByte' returns a different type.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1224"
+                        Severity = "2"
+                    >The equivalent in .NET for method 'java.io.DataInputStream.readUnsignedByte' returns a different type.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1224"
+                        Severity = "2"
+                    >The equivalent in .NET for method 'java.io.DataInputStream.readUnsignedShort' returns a different type.</Issue>
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1073"
+                        LinkKeywordParam = "_javaioDataInput"
+                        Severity = "2"
+                    >Interface 'java.io.DataInput' was converted to 'System.IO.BinaryReader' which has a different behavior.</Issue>
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1073"
+                        LinkKeywordParam = "_javaioDataInput"
+                        Severity = "2"
+                    >Interface 'java.io.DataInput' was converted to 'System.IO.BinaryReader' which has a different behavior.</Issue>
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1073"
+                        LinkKeywordParam = "_javaioDataInput"
+                        Severity = "2"
+                    >Interface 'java.io.DataInput' was converted to 'System.IO.BinaryReader' which has a different behavior.</Issue>
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1262"
+                        Severity = "2"
+                    >The type 'org.apache.harmony.luni.internal_Renamed.nls.Messages' could not be found. If it was not included in the conversion, there may be compiler issues.</Issue>
+                </Section>
+            </Class>
+        </File>
+        <File
+            OldPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Dataoutput.java"
+            NewPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Java io library for NET micro.NET\Dataoutput.cs"
+        >
+            <Class Name = "java.io.DataOutput" >
+                <Section Name = "Declarations" >
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1231"
+                        Severity = "2"
+                    >More than one of the Java class members are converted to this same member in .NET.</Issue>
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1231"
+                        Severity = "2"
+                    >More than one of the Java class members are converted to this same member in .NET.</Issue>
+                </Section>
+            </Class>
+        </File>
+        <File
+            OldPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Dataoutputstream.java"
+            NewPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Java io library for NET micro.NET\Dataoutputstream.cs"
+        >
+            <Class Name = "DataOutputStream" >
+                <Section Name = "writeDouble(double)" >
+                    <Issue
+                        Type = "Compile"
+                        Number = "1000"
+                        LinkKeywordParam = "_javalangDoubledoubleToLongBits_double"
+                        Severity = "1"
+                    >Method 'java.lang.Double.doubleToLongBits' was not converted.</Issue>
+                </Section>
+                <Section Name = "writeFloat(float)" >
+                    <Issue
+                        Type = "Compile"
+                        Number = "1000"
+                        LinkKeywordParam = "_javalangFloatfloatToIntBits_float"
+                        Severity = "1"
+                    >Method 'java.lang.Float.floatToIntBits' was not converted.</Issue>
+                </Section>
+                <Section Name = "Declarations" >
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                </Section>
+            </Class>
+        </File>
+        <File
+            OldPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\EOFException.java"
+            NewPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Java io library for NET micro.NET\EOFException.cs"
+        />
+        <File
+            OldPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\FilterInputStream.java"
+            NewPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Java io library for NET micro.NET\FilterInputStream.cs"
+        >
+            <Class Name = "java.io.FilterInputStream" >
+                <Section Name = "FilterInputStream(java.io.InputStream)" >
+                    <Issue
+                        Type = "Compile"
+                        Number = "1000"
+                        LinkKeywordParam = "_javaioInputStreamInputStream"
+                        Severity = "1"
+                    >Constructor 'java.io.InputStream.InputStream' was not converted.</Issue>
+                </Section>
+                <Section Name = "mark(int)" >
+                    <Issue
+                        Type = "Compile"
+                        Number = "1000"
+                        LinkKeywordParam = "_javaioInputStreammark_int"
+                        Severity = "1"
+                    >Method 'java.io.InputStream.mark' was not converted.</Issue>
+                </Section>
+                <Section Name = "markSupported()" >
+                    <Issue
+                        Type = "Compile"
+                        Number = "1000"
+                        LinkKeywordParam = "_javaioInputStreammarkSupported"
+                        Severity = "1"
+                    >Method 'java.io.InputStream.markSupported' was not converted.</Issue>
+                </Section>
+                <Section Name = "reset()" >
+                    <Issue
+                        Type = "Compile"
+                        Number = "1000"
+                        LinkKeywordParam = "_javaioInputStreamreset"
+                        Severity = "1"
+                    >Method 'java.io.InputStream.reset' was not converted.</Issue>
+                </Section>
+                <Section Name = "Declarations" >
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                </Section>
+            </Class>
+        </File>
+        <File
+            OldPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\FilterOutputStream.java"
+            NewPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Java io library for NET micro.NET\FilterOutputStream.cs"
+        >
+            <Class Name = "java.io.FilterOutputStream" >
+                <Section Name = "Declarations" >
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1156"
+                        Severity = "1"
+                    >The following fragment of code could not be parsed and was not converted.</Issue>
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1262"
+                        Severity = "2"
+                    >The type 'org.apache.harmony.luni.internal_Renamed.nls.Messages' could not be found. If it was not included in the conversion, there may be compiler issues.</Issue>
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1262"
+                        Severity = "2"
+                    >The type 'org.apache.harmony.luni.util.SneakyThrow' could not be found. If it was not included in the conversion, there may be compiler issues.</Issue>
+                </Section>
+            </Class>
+        </File>
+        <File
+            OldPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\InputStream.java"
+            NewPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Java io library for NET micro.NET\InputStream.cs"
+        >
+            <Class Name = "java.io.InputStream" >
+                <Section Name = "Declarations" >
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1262"
+                        Severity = "2"
+                    >The type 'org.apache.harmony.luni.internal_Renamed.nls.Messages' could not be found. If it was not included in the conversion, there may be compiler issues.</Issue>
+                </Section>
+            </Class>
+        </File>
+        <File
+            OldPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\IOException.java"
+            NewPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Java io library for NET micro.NET\IOException.cs"
+        >
+            <Issue
+                Type = "Compile"
+                Number = "4004"
+                Severity = "1"
+            >Error parsing file C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\IOException.java.</Issue>
+        </File>
+        <File
+            OldPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\OutputStream.java"
+            NewPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Java io library for NET micro.NET\OutputStream.cs"
+        >
+            <Class Name = "java.io.OutputStream" >
+                <Section Name = "Declarations" >
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1092"
+                        Severity = "2"
+                    >The differences in the Expected value  of parameters for method 'WriteByte'  may cause compilation errors. </Issue>
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1262"
+                        Severity = "2"
+                    >The type 'org.apache.harmony.luni.internal_Renamed.nls.Messages' could not be found. If it was not included in the conversion, there may be compiler issues.</Issue>
+                </Section>
+            </Class>
+        </File>
+        <File
+            OldPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\UTFDataFormatException.java"
+            NewPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Java io library for NET micro.NET\UTFDataFormatException.cs"
+        />
+        <File
+            OldPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Util.java"
+            NewPath = "C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\Java io library\Java\Java io library for NET micro.NET\Util.cs"
+        >
+            <Class Name = "org.apache.harmony.luni.util.Util" >
+                <Section Name = "Declarations" >
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1073"
+                        LinkKeywordParam = "_javalangStringgetBytes_javalangString"
+                        Severity = "2"
+                    >Method 'java.lang.String.getBytes' was converted to 'System.Text.Encoding.GetEncoding(string).GetBytes(string)' which has a different behavior.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1000"
+                        LinkKeywordParam = "_javalangSystem"
+                        Severity = "1"
+                    >Method 'java.lang.System.getProperty' was not converted.</Issue>
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1262"
+                        Severity = "2"
+                    >The type 'org.apache.harmony.luni.internal_Renamed.nls.Messages' could not be found. If it was not included in the conversion, there may be compiler issues.</Issue>
+                </Section>
+                <Section Name = "getBytes(java.lang.String)" >
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1073"
+                        LinkKeywordParam = "_javalangStringgetBytes_javalangString"
+                        Severity = "2"
+                    >Method 'java.lang.String.getBytes' was converted to 'System.Text.Encoding.GetEncoding(string).GetBytes(string)' which has a different behavior.</Issue>
+                </Section>
+                <Section Name = "getUTF8Bytes(java.lang.String)" >
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1073"
+                        LinkKeywordParam = "_javalangStringgetBytes_javalangString"
+                        Severity = "2"
+                    >Method 'java.lang.String.getBytes' was converted to 'System.Text.Encoding.GetEncoding(string).GetBytes(string)' which has a different behavior.</Issue>
+                </Section>
+                <Section Name = "toString(byte[])" >
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1092"
+                        Severity = "2"
+                    >The differences in the Format  of parameters for constructor 'java.lang.String.String'  may cause compilation errors. </Issue>
+                </Section>
+                <Section Name = "toString(byte[],int,int)" >
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1092"
+                        Severity = "2"
+                    >The differences in the Format  of parameters for constructor 'java.lang.String.String'  may cause compilation errors. </Issue>
+                </Section>
+                <Section Name = "toUTF8String(byte[],int,int)" >
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1092"
+                        Severity = "2"
+                    >The differences in the Format  of parameters for constructor 'java.lang.String.String'  may cause compilation errors. </Issue>
+                </Section>
+                <Section Name = "parseDate(java.lang.String)" >
+                    <Issue
+                        Type = "Compile"
+                        Number = "1000"
+                        LinkKeywordParam = "_javautilTimeZonegetTimeZone_javalangString"
+                        Severity = "1"
+                    >Method 'java.util.TimeZone.getTimeZone' was not converted.</Issue>
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1073"
+                        LinkKeywordParam = "_javautilCalendarget_int"
+                        Severity = "2"
+                    >Method 'java.util.Calendar.get' was converted to 'SupportClass.CalendarManager.Get' which has a different behavior.</Issue>
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1073"
+                        LinkKeywordParam = "_javautilDategetTime"
+                        Severity = "2"
+                    >Method 'java.util.Date.getTime' was converted to 'System.DateTime.Ticks' which has a different behavior.</Issue>
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1043"
+                        Severity = "2"
+                    >The equivalent in .NET for method 'java.util.Calendar.getTime' may return a different value.</Issue>
+                </Section>
+                <Section Name = "decode(java.lang.String,boolean,java.lang.String)" >
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1043"
+                        Severity = "2"
+                    >The equivalent in .NET for method 'java.lang.Character.digit' may return a different value.</Issue>
+                    <Issue
+                        Type = "ToDo"
+                        Number = "1043"
+                        Severity = "2"
+                    >The equivalent in .NET for method 'java.lang.Character.digit' may return a different value.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1000"
+                        LinkKeywordParam = "_javaioByteArrayOutputStreamtoString_javalangString"
+                        Severity = "1"
+                    >Method 'java.io.ByteArrayOutputStream.toString' was not converted.</Issue>
+                    <Issue
+                        Type = "Compile"
+                        Number = "1000"
+                        LinkKeywordParam = "_javaioByteArrayOutputStreamreset"
+                        Severity = "1"
+                    >Method 'java.io.ByteArrayOutputStream.reset' was not converted.</Issue>
+                </Section>
+            </Class>
+        </File>
+        <Issue
+            Type = "Global Warning"
+            Number = "1225"
+            Severity = "2"
+        >Type castings between primitive types may have different behavior.</Issue>
+        <Issue
+            Type = "Global Warning"
+            Number = "1274"
+            Severity = "2"
+        >Interaction between members of a class may differ because their execution sequence is different. </Issue>
+        <Issue
+            Type = "Global Warning"
+            Number = "1133"
+            Severity = "2"
+        >The equivalent of java.lang.Object.equals in Visual C# can return a different value if the two comparison methods differ.</Issue>
+    </Root>
+</ConversionLog>
+

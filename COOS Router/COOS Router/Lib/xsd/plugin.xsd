@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           targetNamespace="http://www.coos.org/PluginXMLSchema"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.coos.org/PluginXMLSchema">
+    
+    <!--<xs:import namespace="http://www.coos.org/common" schemaLocation="common.xsd"/>-->
+    <xs:element name="plugins" type="pluginsType"/>
+    <xs:complexType name="outBoundType">
+        <xs:sequence>
+            <xs:element type="filterType" name="filter" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="propertyType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="name" use="optional"/>
+                <xs:attribute type="xs:string" name="value" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="pluginsType">
+        <xs:sequence>
+            <xs:element type="pluginType" name="plugin" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element type="processorType" name="processor" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element type="transportType" name="transport" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element type="channelType" name="channel" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="inBoundType">
+        <xs:sequence>
+            <xs:element type="filterType" name="filter" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="pluginType">
+    	<xs:sequence>
+    		<xs:element type="xs:string" name="channel"
+    			maxOccurs="unbounded" minOccurs="0" />
+    		<xs:element name="property" type="propertyType"
+    			maxOccurs="unbounded" minOccurs="0">
+    		</xs:element>
+    		<xs:element name="alias" type="xs:string"
+    			maxOccurs="unbounded" minOccurs="0">
+    		</xs:element>
+    	</xs:sequence>
+    	<xs:attribute type="xs:string" name="name" use="optional" />
+    	<xs:attribute type="xs:string" name="class" use="optional" />
+
+    	<xs:attribute name="channel" type="xs:string"></xs:attribute>
+    	<xs:attribute name="startLevel" type="xs:string"></xs:attribute>
+    	<xs:attribute name="transport" type="xs:string"></xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="filterType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="processor" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="processorType">
+        <xs:sequence>
+            <xs:element type="propertyType" name="property" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="name"/>
+        <xs:attribute type="xs:string" name="class"/>
+        <xs:attribute type="xs:boolean" name="shared"/>
+    </xs:complexType>
+    <xs:complexType name="transportType">
+        <xs:sequence>
+            <xs:element type="propertyType" name="property" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="name"/>
+        <xs:attribute type="xs:string" name="class"/>
+    </xs:complexType>
+
+    <xs:complexType name="channelType">
+    	<xs:sequence>
+    		<xs:element type="xs:string" name="protocol"
+    			maxOccurs="unbounded" minOccurs="0" />
+    		<xs:element type="propertyType" name="property"
+    			maxOccurs="unbounded" minOccurs="0" />
+    		<xs:element type="inBoundType" name="inBound" maxOccurs="1"
+    			minOccurs="0" />
+    		<xs:element type="outBoundType" name="outBound"
+    			maxOccurs="1" minOccurs="0" />
+    	</xs:sequence>
+    	<xs:attribute name="name" type="xs:string"></xs:attribute>
+    	<xs:attribute name="class" type="xs:string"></xs:attribute>
+    	<xs:attribute name="protocol" type="xs:string"></xs:attribute>
+    	<xs:attribute name="transport" type="xs:string"></xs:attribute>
+    	<xs:attribute name="segment" type="xs:string"></xs:attribute>
+    </xs:complexType>
+
+</xs:schema>

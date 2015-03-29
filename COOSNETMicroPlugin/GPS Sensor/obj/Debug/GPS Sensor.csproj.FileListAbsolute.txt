@@ -1,0 +1,18 @@
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\bin\Debug\le\GPS Sensor.dll
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\bin\Debug\be\GPS Sensor.dll
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\bin\Debug\le\GPS Sensor.pdb
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\bin\Debug\be\GPS Sensor.pdb
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\bin\Debug\GPS Sensor.dll
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\bin\Debug\GPS Sensor.pdb
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\bin\Debug\le\GPS Sensor.pe
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\bin\Debug\le\GPS Sensor.pdbx
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\bin\Debug\be\GPS Sensor.pe
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\bin\Debug\be\GPS Sensor.pdbx
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\obj\Debug\TinyCLR_DebugReferences.cache
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\obj\Debug\be\GPS Sensor.pe
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\obj\Debug\be\GPS Sensor.pdbx
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\obj\Debug\le\GPS Sensor.pe
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\obj\Debug\le\GPS Sensor.pdbx
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\obj\Debug\GPS Sensor.dll
+C:\Users\henning\Documents\Visual Studio 2010\Projects\COOSNETMicroPlugin\GPS Sensor\obj\Debug\GPS Sensor.pdb

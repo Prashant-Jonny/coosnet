@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>COOSPluginInterfaces</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>COOSPluginInterfaces</RootNamespace>
+    <ProjectTypeGuids>{b69e3092-b931-443c-abe7-7e7b65f2a37f};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6DA7C7E9-7BE5-4C4D-ABD2-B9D8B2DA84E8}</ProjectGuid>
+    <TargetFrameworkVersion>v4.1</TargetFrameworkVersion>
+    <NetMfTargetsBaseDir Condition="'$(NetMfTargetsBaseDir)'==''">$(MSBuildExtensionsPath32)\Microsoft\.NET Micro Framework\</NetMfTargetsBaseDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
+  <ItemGroup>
+    <Compile Include="IAsyncCallback.cs" />
+    <Compile Include="IChannel.cs" />
+    <Compile Include="IChannelPrimitives.cs" />
+    <Compile Include="IChannelProcessor.cs" />
+    <Compile Include="IConfigurable.cs" />
+    <Compile Include="IConnectable.cs" />
+    <Compile Include="IConsumer.cs" />
+    <Compile Include="IEndpoint.cs" />
+    <Compile Include="IEndpointPrimitives.cs" />
+    <Compile Include="IEndpointStateManager.cs" />
+    <Compile Include="IExchange.cs" />
+    <Compile Include="ILCMEndpoint.cs" />
+    <Compile Include="IMessage.cs" />
+    <Compile Include="IMessagePrimitives.cs" />
+    <Compile Include="INotification.cs" />
+    <Compile Include="IProcessor.cs" />
+    <Compile Include="IProducer.cs" />
+    <Compile Include="IService.cs" />
+    <Compile Include="ISubscriptionFilter.cs" />
+    <Compile Include="ISubscriptionFilterPrimitives.cs" />
+    <Compile Include="ITransport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SPOT.Native">
+    </Reference>
+  </ItemGroup>
+</Project>

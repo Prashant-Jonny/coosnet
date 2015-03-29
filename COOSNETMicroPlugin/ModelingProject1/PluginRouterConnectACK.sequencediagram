@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8efed925-8807-4fe8-8db4-9f14a0f76094" name="Connect ACK" linkedPackageId="695ea1c2-2627-44a3-9a6a-9d085bd3de82" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <description>Endpoint/plugin connection to router in COOS peer to peer network</description>
+  <profileInstances>
+    <packageHasProfileInstances Id="64541b8b-c7da-452b-9e74-6f5972b39896">
+      <profileInstance Id="728d08d7-76cd-466a-b87a-f6132a786e84" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="72c89c12-0381-4ed9-ad8f-959cde00fecc">
+      <profileInstance Id="dbc1f745-94b6-4477-b199-321fd371a798" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="2121c525-ef83-4ecc-8700-32373f6ceeac" name="Connect ACK" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <ownedCommentsInternal>
+          <comment Id="678bff2e-2634-4910-a56f-32b6ac116c5b">
+            <elementDefinition Id="34b1e986-af97-4a3f-8448-e423110205c1" />
+            <body>Router send Connect_ACK with message properties;
+ALLOC_UUID = allocated uuid to this plugin/endpoint/edge</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker Id="1eae48a5-5a7e-4f79-9cf4-16b5c1647085" LastKnownName="BehaviorExecutionSpecification3" />
+            </annotatedElements>
+          </comment>
+          <comment Id="43c2fad3-5cee-4d24-b629-343e7f6677a0">
+            <elementDefinition Id="6ce85e22-4b45-4ca3-842b-e52b247fd727" />
+            <body>Plugin sends properties in msg; CON_UUID = router UUID and CON_SEGMENT = segment</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker Id="e309715c-9e33-433b-b9ea-e398e265e3ee" LastKnownName="BehaviorExecutionSpecification1" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="255b9d47-aa79-46be-b03d-014498d8c001" />
+        <fragments>
+          <behaviorExecutionSpecification Id="e309715c-9e33-433b-b9ea-e398e265e3ee" name="BehaviorExecutionSpecification1">
+            <elementDefinition Id="9f515b02-bf84-4108-bf7e-c7a7076bb630" />
+            <coveredLifelines>
+              <lifelineMoniker Id="16528f56-b2ad-4cc1-982b-785d92735da1" LastKnownName="Router" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="411fc96f-6d06-4631-aa57-353c19491cb9" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="0c6ed315-4d53-45ae-ad8d-a27be55ccc56" LastKnownName="ExecutionOccurrenceSpecification1" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="c7f534be-1801-4865-9f6e-4490ba2958b2" LastKnownName="MessageOccurrenceSpecification2" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="0c6ed315-4d53-45ae-ad8d-a27be55ccc56" name="ExecutionOccurrenceSpecification1">
+            <elementDefinition Id="7c9bb2c9-2906-438c-a82b-d936f45ba14a" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="43f4a03a-92d5-4bb8-9e03-8af5f20d929f" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="16528f56-b2ad-4cc1-982b-785d92735da1" LastKnownName="Router" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="c7f534be-1801-4865-9f6e-4490ba2958b2" name="MessageOccurrenceSpecification2">
+            <elementDefinition Id="ee27e872-6a10-4a5a-ab12-739a2266f3b9" />
+            <covered>
+              <lifelineMoniker Id="16528f56-b2ad-4cc1-982b-785d92735da1" LastKnownName="Router" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="fa0b7c0f-ff9b-4ad3-b62a-da05be740ae6" name="MessageOccurrenceSpecification1">
+            <elementDefinition Id="804930a8-932a-4bca-8087-84c044ffae14" />
+            <covered>
+              <lifelineMoniker Id="3883df5a-8ca6-41d2-a527-7e3bcbc11e68" LastKnownName="Plugin" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="411fc96f-6d06-4631-aa57-353c19491cb9" name="ExecutionOccurrenceSpecification2">
+            <elementDefinition Id="6b3677b9-7566-42bf-bc04-0b78356cc24b" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="41e74449-0335-43ff-906f-c1a85e2435f4" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="16528f56-b2ad-4cc1-982b-785d92735da1" LastKnownName="Router" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="1eae48a5-5a7e-4f79-9cf4-16b5c1647085" name="BehaviorExecutionSpecification3">
+            <elementDefinition Id="c7bb5b06-a783-448c-83fc-53d997f1fe95" />
+            <coveredLifelines>
+              <lifelineMoniker Id="3883df5a-8ca6-41d2-a527-7e3bcbc11e68" LastKnownName="Plugin" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="eb0e7a47-9fb3-4b8f-b28c-24d427a72300" LastKnownName="ExecutionOccurrenceSpecification6" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="990dedac-22bb-40f1-befe-8b3b72480a14" LastKnownName="ExecutionOccurrenceSpecification5" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="9eb79ebd-a7eb-4146-9659-a030337ce0a4" LastKnownName="MessageOccurrenceSpecification6" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="990dedac-22bb-40f1-befe-8b3b72480a14" name="ExecutionOccurrenceSpecification5">
+            <elementDefinition Id="e45e2631-1afc-4680-a98d-b26e7022d9af" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="b619e38a-d01a-4c9e-ac26-59acc428c78e" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3883df5a-8ca6-41d2-a527-7e3bcbc11e68" LastKnownName="Plugin" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="7e840626-78b6-4ed2-b630-604ff6ff6435" name="MessageOccurrenceSpecification5">
+            <elementDefinition Id="9c5edec7-79be-447f-93e1-276f6aaaa0b7" />
+            <covered>
+              <lifelineMoniker Id="16528f56-b2ad-4cc1-982b-785d92735da1" LastKnownName="Router" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="9eb79ebd-a7eb-4146-9659-a030337ce0a4" name="MessageOccurrenceSpecification6">
+            <elementDefinition Id="01a3cce7-e9c5-4971-89bb-11a45d8d7574" />
+            <covered>
+              <lifelineMoniker Id="3883df5a-8ca6-41d2-a527-7e3bcbc11e68" LastKnownName="Plugin" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="eb0e7a47-9fb3-4b8f-b28c-24d427a72300" name="ExecutionOccurrenceSpecification6">
+            <elementDefinition Id="e52d8ce3-47ee-4ace-a138-b6f538fa3b78" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="b50affcc-820c-489f-aeda-be6c2cd7e751" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3883df5a-8ca6-41d2-a527-7e3bcbc11e68" LastKnownName="Plugin" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="3883df5a-8ca6-41d2-a527-7e3bcbc11e68" name="Plugin" isActor="false" lifelineDisplayName="Plugin">
+            <elementDefinition Id="e6668c45-5bb4-497a-b1eb-581662c3bf80" />
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="fa0b7c0f-ff9b-4ad3-b62a-da05be740ae6" LastKnownName="MessageOccurrenceSpecification1" />
+              <executionOccurrenceSpecificationMoniker Id="990dedac-22bb-40f1-befe-8b3b72480a14" LastKnownName="ExecutionOccurrenceSpecification5" />
+              <executionOccurrenceSpecificationMoniker Id="eb0e7a47-9fb3-4b8f-b28c-24d427a72300" LastKnownName="ExecutionOccurrenceSpecification6" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="16528f56-b2ad-4cc1-982b-785d92735da1" name="Router" isActor="false" lifelineDisplayName="Router">
+            <elementDefinition Id="678a50cf-aa7a-4c64-a356-b31a21239d88" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="0c6ed315-4d53-45ae-ad8d-a27be55ccc56" LastKnownName="ExecutionOccurrenceSpecification1" />
+              <executionOccurrenceSpecificationMoniker Id="411fc96f-6d06-4631-aa57-353c19491cb9" LastKnownName="ExecutionOccurrenceSpecification2" />
+              <messageOccurrenceSpecificationMoniker Id="7e840626-78b6-4ed2-b630-604ff6ff6435" LastKnownName="MessageOccurrenceSpecification5" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="d94cfdb6-3269-475d-a892-7d1f9a9d8e00" name="Connect" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <description>Connect</description>
+            <elementDefinition Id="84b4eae0-4874-45d4-92d7-172908ced5f9" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="fa0b7c0f-ff9b-4ad3-b62a-da05be740ae6" LastKnownName="MessageOccurrenceSpecification1" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="c7f534be-1801-4865-9f6e-4490ba2958b2" LastKnownName="MessageOccurrenceSpecification2" />
+            </receiveEvent>
+          </message>
+          <message Id="35eae01a-7bf2-4bdc-a904-0b39f6331ef8" name="Connect_ACK" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="0a438a32-26d5-4274-8ef2-14392ce6dde4" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="7e840626-78b6-4ed2-b630-604ff6ff6435" LastKnownName="MessageOccurrenceSpecification5" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="9eb79ebd-a7eb-4146-9659-a030337ce0a4" LastKnownName="MessageOccurrenceSpecification6" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="43f4a03a-92d5-4bb8-9e03-8af5f20d929f" name="ExecutionEvent">
+        <elementDefinition Id="c02e7e9b-9c8d-4b3d-b960-8a764ac85b07" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="41e74449-0335-43ff-906f-c1a85e2435f4" name="ExecutionEvent">
+        <elementDefinition Id="b0698573-6316-489c-8d3f-a04fafc80dd7" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="b619e38a-d01a-4c9e-ac26-59acc428c78e" name="ExecutionEvent">
+        <elementDefinition Id="8ac66e1a-6fa4-486c-bde3-43dcdf890814" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="b50affcc-820c-489f-aeda-be6c2cd7e751" name="ExecutionEvent">
+        <elementDefinition Id="af5540cd-ef54-4eb9-a8a5-71e85b0521c2" />
+      </executionEvent>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="695ea1c2-2627-44a3-9a6a-9d085bd3de82" name="COOS micro edition">
+    <elementDefinition Id="37f2ecbd-8c8f-4d23-be12-5e5b01179ca7" />
+  </package>
+</SequenceDesignerModel>

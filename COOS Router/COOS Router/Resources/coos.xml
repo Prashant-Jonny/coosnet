@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<coos xmlns="http://www.coos.org/CoosXMLSchema" name="coosNET">
+
+  <router class="Org.Coos.Messaging.Routing.DefaultRouter">
+
+    <!--<segment name="." routeruuid="RouterNET" routeralgorithm="simpledv" />-->
+
+    <segment name="." routeruuid="RouterNET" routeralgorithm="simpledv" />
+
+    <!--The simpledv algorithm is specifically targeted towards the dispatcher setup in telenor objects--> 
+    <routeralgorithm name="simpledv"  class="Org.Coos.Messaging.Routing.SimpleDVAlgorithm">
+      <property name="refreshInterval" value="5000" />
+    </routeralgorithm>
+    
+    <!--The linkstate algorithm is the most generic and should be used in the generic case--> 
+    <!--<routeralgorithm name="linkstate"  class="Org.Coos.Messaging.Routing.LinkStateAlgorithm">
+      <property name="refreshInterval" value="2000" />
+    </routeralgorithm>-->
+
+  </router>
+
+  <channelserver name="TCPServer"  class="Org.Coos.Messaging.Transport.TCPTransportManager">
+    <property name="port" value="15656" />
+    <property name="host" value="localhost" />
+  </channelserver>
+
+  <channelserver name="default"  class="org.coos.messaging.transport.DefaultChannelServer" />
+  
+  <channel name="out" init="false" transport="TCP1" defaultgw="true">
+    <outBound>
+    </outBound>
+  </channel>
+
+  <channel name="in">
+    <inBound>
+    </inBound>
+    <outBound>
+      
+    </outBound>
+  </channel>
+
+  <channel-mapping uuid=".*" channel="in" />
+  
+
+  <transport name="TCP1" class="Org.Coos.Messaging.Transport.TCPTransport">
+    <property name="host" value="localhost" />
+    <property name="port" value="15656" />
+    <property name="retry" value="true" />
+  </transport>
+
+  <processor name="logger" class="Org.Coos.Messaging.Processor.Logger" shared="true" />
+
+</coos>

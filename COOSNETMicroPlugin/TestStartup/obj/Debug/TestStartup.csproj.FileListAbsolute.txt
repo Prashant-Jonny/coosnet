@@ -1,0 +1,5 @@
+C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\TestStartup\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\TestStartup\obj\Debug\TinyCLR_DebugReferences.cache
+C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\TestStartup\obj\Debug\TestStartup.Resources.resources
+C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\TestStartup\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\henning\Documents\Visual Studio 2010\Projects\NTNUMasterThesis2010\TestStartup\obj\Debug\GenerateResource.write.1.tlog

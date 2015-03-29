@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>Java io library</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Java_io_library</RootNamespace>
+    <ProjectTypeGuids>{b69e3092-b931-443c-abe7-7e7b65f2a37f};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC71C3D2-E721-4D91-963F-156F84FB1CAE}</ProjectGuid>
+    <TargetFrameworkVersion>v4.1</TargetFrameworkVersion>
+    <NetMfTargetsBaseDir Condition="'$(NetMfTargetsBaseDir)'==''">$(MSBuildExtensionsPath32)\Microsoft\.NET Micro Framework\</NetMfTargetsBaseDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
+  <ItemGroup>
+    <Content Include="Java\Closable.java" />
+    <Content Include="Java\FilterInputStream.java" />
+    <Content Include="Java\FilterOutputStream.java" />
+    <Content Include="Java\InputStream.java" />
+    <Compile Include="Java\Java io library for NET micro.NET\Datainputstream.cs" />
+    <Compile Include="Java\Java io library for NET micro.NET\Dataoutputstream.cs" />
+    <Compile Include="Java\Java io library for NET micro.NET\EOFException.cs" />
+    <Compile Include="Java\Java io library for NET micro.NET\SupportClass.cs" />
+    <Compile Include="Java\Java io library for NET micro.NET\UTFDataFormatException.cs" />
+    <Compile Include="Java\Java io library for NET micro.NET\Util.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Java\UTFDataFormatException.java" />
+    <Content Include="Java\Util.java" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SPOT.Native">
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.IO" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Java\Datainput.java" />
+    <Content Include="Java\Datainputstream.java" />
+    <Content Include="Java\Dataoutput.java" />
+    <Content Include="Java\Dataoutputstream.java">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Java\EOFException.java" />
+    <Content Include="Java\IOException.java" />
+    <Content Include="Java\OutputStream.java" />
+  </ItemGroup>
+</Project>
